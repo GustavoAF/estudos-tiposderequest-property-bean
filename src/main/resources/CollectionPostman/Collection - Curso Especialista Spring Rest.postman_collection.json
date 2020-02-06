@@ -1,0 +1,603 @@
+{
+	"info": {
+		"_postman_id": "086e8d34-24d1-4d1d-abe8-bd5c7c3a2906",
+		"name": "Collection - Curso Especialista Spring Rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Recursos sem passagem de parâmetro",
+			"item": [
+				{
+					"name": "Get sem passagem de parâmetro retornando tipo Json com ResponseEntity",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-spring/v1/metodo-sem-parametro/retornando-json-com-responseEntity",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-spring",
+								"v1",
+								"metodo-sem-parametro",
+								"retornando-json-com-responseEntity"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get sem passagem de parâmetro retornando tipo Json com ResponseEntity Sem Tipo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-spring/v1/metodo-sem-parametro/retornando-json-com-responseEntity-sem-tipo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-spring",
+								"v1",
+								"metodo-sem-parametro",
+								"retornando-json-com-responseEntity-sem-tipo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get sem passagem de parâmetro retornando tipo por referencia Content Type tipo Json",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-spring/v1/metodo-sem-parametro/retornando-tipo-referencia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-spring",
+								"v1",
+								"metodo-sem-parametro",
+								"retornando-tipo-referencia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get sem passagem de parâmetro retornando tipo primitivo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-spring/v1/metodo-sem-parametro/retornando-primitivo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-spring",
+								"v1",
+								"metodo-sem-parametro",
+								"retornando-primitivo"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Recursos com parâmetros na uri",
+			"item": [
+				{
+					"name": "Get com Parametro Passado na uri",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-spring/v1/parametros-na-uri/request_param_simples/?id=23",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-spring",
+								"v1",
+								"parametros-na-uri",
+								"request_param_simples",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "23"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get com Parametro Passado na Uri - @PathVariable",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-spring/v1/parametros-na-uri/parametro-uri-path-variable/38",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-spring",
+								"v1",
+								"parametros-na-uri",
+								"parametro-uri-path-variable",
+								"38"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get com dois Parametros Passados na Uri - @PathVariable",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/x-www-form-urlencoded"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-spring/v1/parametros-na-uri/dois-parametro-uri-path-variable/38/39",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-spring",
+								"v1",
+								"parametros-na-uri",
+								"dois-parametro-uri-path-variable",
+								"38",
+								"39"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get com Dois Parametro Passado na Uri - @RequestParam",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/xml",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-spring/v1/parametros-na-uri/request_com2_param_simples/?id=38&id2=39",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-spring",
+								"v1",
+								"parametros-na-uri",
+								"request_com2_param_simples",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "38"
+								},
+								{
+									"key": "id2",
+									"value": "39"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Recurso com passagem de parâmetro no payload",
+			"item": [
+				{
+					"name": "Get com Parametro Passado no payload",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Gustavo\",\n\t\"idade\": 40\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-spring/v1/parametros-no-payload/json-recebido-no-payload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-spring",
+								"v1",
+								"parametros-no-payload",
+								"json-recebido-no-payload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get com Parametro Passado no payload retornando ResponseEntity",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Gustavo\",\n\t\"idade\": 40\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-spring/v1/parametros-no-payload/json-recebido-no-payload-usando-ResponseEntity",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-spring",
+								"v1",
+								"parametros-no-payload",
+								"json-recebido-no-payload-usando-ResponseEntity"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Recursos com Application Properties e Bean Configurations",
+			"item": [
+				{
+					"name": "Post com Application Properties",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-spring/v1/RequestMappingApplicationPropertiesEBeans/application-properties",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-spring",
+								"v1",
+								"RequestMappingApplicationPropertiesEBeans",
+								"application-properties"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post com Application Properties usando anotacao values",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-spring/v1/RequestMappingApplicationPropertiesEBeans/application-properties-anotacao-values",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-spring",
+								"v1",
+								"RequestMappingApplicationPropertiesEBeans",
+								"application-properties-anotacao-values"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post com Bean Configuration",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"type": "text",
+								"value": "application/json",
+								"disabled": true
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/estudos-spring/v1/RequestMappingApplicationPropertiesEBeans/classe-configuracao",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"estudos-spring",
+								"v1",
+								"RequestMappingApplicationPropertiesEBeans",
+								"classe-configuracao"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	]
+}

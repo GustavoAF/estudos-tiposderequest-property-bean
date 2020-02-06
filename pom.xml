@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	 <!-- A tag abaixo informa que estamos herdando configurações de um outro lugar. Nesse caso 
+	 esta sendo dito que estamos usando o spring boot versao 2.1.6 -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.2.4.RELEASE</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	
+	<!-- A tag abaixo são as configurações do projeto, tudo isso foi informado no inicio do projeto -->
+	<groupId>com.estudos.spring</groupId>
+	<artifactId>estudos</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>estudos</name>
+	<description>Demo project for Spring Boot</description>
+
+	<properties>
+	<!-- A tag abaixo podemos especificar propriedades do projeto, é possivel também criar suas proprias propriedades -->
+		<java.version>1.8</java.version>
+	</properties>
+	
+	<!-- Dentro da tag abaixo colocamos as dependencias do nosso projeto -->
+	<dependencies>
+	
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		
+		<!--A dependencia abaixo é necessária para ser possível usado o modulo devtools nativo do Spring, 
+		tornando a inicialização mais rápida pois ele usa o classloader.-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		
+     	<!-- Dependencia usada para disponibiliar ao content negociation no matadata Accept o retorno do tipo xml, 
+    	usando o valor em Accept do Header como  application/xml -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.dataformat</groupId>
+			<artifactId>jackson-dataformat-xml</artifactId>
+		</dependency>
+				
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
+	</dependencies>
+	
+	<!-- A tag abaixo faz parte das dependencias de build do projeto informamos os plugins usados no build -->
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
